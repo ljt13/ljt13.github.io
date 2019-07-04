@@ -11,9 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
 	</head>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<!-- //paste this code under the head tag or in a separate js file.
+	// Wait for window load -->
+	<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
+
 	<body class="is-preload">
 
+		<div class="se-pre-con"></div>
+		
 		<!-- Wrapper-->
 			<div id="wrapper">
 
@@ -25,7 +43,7 @@
 						<a href="#work" class="icon fa-folder"><span>Projects</span></a>
 						<a href="#design" class="icon fa-picture-o"><span>Design</span></a>
 						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>						
-						<a href="https://www.linkedin.com/in/laura-tan-4b9b33139/" target="_blank" class="icon fa-linkedin-square"><span>Linked In</span></a>
+						
 					</nav>
 
 				<!-- Main -->
@@ -35,10 +53,17 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Laura Tan</h1>
-									<p>Medical Student & Programmer</p>
+									<p>Academic Foundation Doctor,</br>Web Developer & Programmer</p>
+									
+
+									<img class = "avatar" src = "images/me_circle.png" alt="">
+
+
+									<h5></br><i class = "fa fa-envelope"> </i> <a href= 'mailto:laurajptan@gmail.com'>laurajptan@gmail.com</a></h5>
 								</header>
 								<a href="#about" class="jumplink pic">
 									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
@@ -49,13 +74,17 @@
 									<h2>About</h2>
 								</header>
 								<p>
-									I am a final year Medical Student at Imperial College London, with an intercalated BSc in Cardiovascular Sciences (First Class Honours). </br> I am passionate about medical innovation with growing experience in several programming languages. </p> <p>I am highly competent in MATLAB and html/CSS, wth particular skills in MATLAB image processing, analysis, visualisation, and algorithm development. 
-									I also have growing competency with  Python and JavaScript.</p><p>
+									I am a recent graduate from Imperial College London School of Medicine, with an intercalated BSc in Cardiovascular Sciences (First Class Honours) currently working as an Academic Foundation Year 1 Doctor in Cardiff. </p><p>
 
-									I am Co-Founder of the Imperial College School of Medicine Coding Society (reaching 292 members after 6 months and shortlisted for New Society of the Year at the IC Union Awards 18) and Medic Lead for the IC HealthHackathon 2018. I am skilled in web development with experience in media and publicity roles, always on the look-out for new opportunities.
+									I am passionate about medical innovation with growing experience in several programming languages (predominantly working with Matlab and Python). I am also avaliable as a freelance web developer and have extensive experience in media and publicity roles. </p><p>								
+
+									I am Co-Founder of the Imperial College School of Medicine Coding Society (reaching 292 members after 6 months and shortlisted for New Society of the Year at the IC Union Awards 18) and Medic Lead for the IC HealthHackathon 2018. </p><p>
+
+									I am currently seeking medical technology and coding-related projects in Cardiff to get involved in alongside my junior doctor jobs. </br></br>
+
 
 								</p> 
-							</br>
+							
 				</article>
 
 
@@ -75,98 +104,173 @@
 
 									<div class="row">
 										 <div class="column2 left" >
-										    <a href="https://www.facebook.com/ICSMCoding/" target = '_blank'><img src="images/icsmcoding.png" width="180" style= "margin-right:15px; margin:25px"; ></a>
+										    <a href="https://www.facebook.com/ICSMCoding/" target = '_blank'><img src="images/icsmcoding.png" width="150" style= "margin: 0px 5px 0px 20px"; ></a>
 										 </div>
 										 <div class="column2 right">
 										    <h3> Co-Founder Imperial College Coding Society</h3>
-										    <p> <i> IMPERIAL COLLEGE SCHOOL OF MEDICINE </i> </br> I created the IC School of Medicine Coding Society, a platform proving coding workshops, hackathons and speaker events exploring the application of code within medicine. </p>
+
+	
+										    <h6> Imperial College School of Medicine</h6> <p>I created the IC School of Medicine Coding Society, a platform proving coding workshops, hackathons and speaker events exploring the application of code within medicine.   </br> <i class = 'button textarrow fa fa-chevron-right' onclick="hiddentextfunction1(); toggleChevron()" ></i> </p>
+
+										    
+
+										    <div id="hiddentext1" >
 											<p>Within only 6 months, I successfully lead ICSM Coding to gain over 290 members, ran three sell-out coding courses, held a conference exploring coding in the medical field with several high profile speakers and lead a web development workshop. I created all branding and marketing,   facilitated all events and  created and managed all media and communications (gaining >360 follows and a mailing list of >300).</p><p> We ended our first year with over £1000 profit and were shortlisted for New Club, Society & Project of the Year at the Imperial College Union Awards 2018. </p>
+											<hr>
+										</div>
 
 	 									 </div>
 									</div>
 								
-								<hr>
-							</br>
+									<p></br></p>
 										<div class="row">
 										 <div class="column2 left" >
-										    <a href="https://www.gpdq.co.uk" target = '_blank'><img src="images/gdpq.png" width="180" style= "margin-right:15px; margin:25px"></a>
+										    <a href="https://www.gpdq.co.uk" target = '_blank'><img src="images/gdpq.png" width="160" style= "margin-right:15px; margin:25px"></a>
 										 </div>
 										 <div class="column2 right">
 										    <h3> Intern at GPDQ: Research, Marketing and Clinical Strategy</h3>
-										    <p> <i> GPDQ - A LONDON BASED DIGITAL HEALTH START UP
-											 </i> </br> GPDQ is a highly successful medical start up founded by GPs to provide a novel, innovative  approach to GP home visiting through use of technology. </p><p> During my time with GPDQ, I created an extensive data library to support our NHS proposition, finalised a marketing piece on portfolio GPs, got involved in serveral key NHS strategy meetings, explored tender opportunities and attended meetings with Bupa, drFocused, Versalian and several other digital health companies and start ups.
-										 </p>
+										    <h6> GPDQ - a London Based Digital Health Start Up</h6>
+										    <p>
+											  GPDQ is a highly successful medical start up founded by GPs to provide a novel, innovative  approach to GP home visiting through use of technology. </br>
+
+											 <i class = 'button textarrow fa fa-chevron-right' onclick="hiddentextfunction2(); toggleChevron()" ></i> </p>
+											 </p>
+
+										    
+
+										    <div id="hiddentext2" >
+									    	<p> During my time with GPDQ, I created an extensive data library to support our NHS proposition, finalised a marketing piece on portfolio GPs, got involved in serveral key NHS strategy meetings, explored tender opportunities and attended meetings with Bupa, drFocused, Versalian and several other digital health companies and start ups.
+										 </p> <hr> </div>
 
 	 									 </div>
 									</div>
-							<hr>
-							</br>
+							
+							<p></br></p>
 									<div class="row">
 										 <div class="column2 left" >
-										    <a href="http://lead-in.org.uk/" target = '_blank'><img src="images/leadin.png" width="160" style= "margin-right:15px; margin:25px"></a>
+										    <a href="http://lead-in.org.uk/" target = '_blank'><img src="images/leadin.png" width="130" style= " margin:10px 0px 0px 35px"></a>
 										 </div>
 										 <div class="column2 right">
 										    <h3> Publicity and Media Officer at Lead In Health </h3>
-										    <p> <i> LEAD IN HEALTH: LEADERSHIP AND INNOVATION IN HEALTHCARE
-											 </i> </br> Lead In Health is a London-based organisation which enhances the engagement and participation of medical students and doctors in clinical management, innovation and leadership. I was responsible for promoting and organising several large scale events across London covering topics including: Clinical Entrepreneurs, AI and medtech Start Ups. I created all         promotional material, managed ticketing and event pages and assisted with set up,               organisation and running of the events. </p>
+										    <h6> Lead In Health: Leadership and Innovation in Healthcare
+											 </h6> <p> Lead In Health is a London-based organisation which enhances the engagement and participation of medical students and doctors in clinical management, innovation and leadership. 
+
+											 </br>
+											 <i class = "button textarrow fa fa-chevron-right" onclick = "hiddentextfunction3(); toggleChevron()"></i>
+											 </p>
+										 	<div id = hiddentext3>
+									 		<p>
+											I was responsible for promoting and organising several large scale events across London covering topics including: Clinical Entrepreneurs, AI and medtech Start Ups. I created all         promotional material, managed ticketing and event pages and assisted with set up,               organisation and running of the events. </p><hr>
+										</div>
 
 	 									 </div>
 									</div>
 								
-								<hr>
-							</br>
+								
+							<p></br></p>
+
+
+
+									<div class="row">
+										 <div class="column2 left" >
+										    <a href="" target = '_blank'><img src="images/healthhack.png" width="190" style= " margin:25px 0px 0px 15px"></a>
+										 </div>
+										 <div class="column2 right">
+										    <h3> Clinical Lead at the Imperial College Health Hackathon </h3>
+										    <h6> Imperial College London
+											 </h6> <p> Alongside representatives from the Imperial Departments of Computing and BioEngineering, I planned, organised and managed the Imperial College Healthhackathon 2018 - an all weekend event with over 100 students competing in mixed teams to develop software and hardware tools to solve current medical issues.
+. 
+
+											 </br>
+											 <i class = "button textarrow fa fa-chevron-right" onclick = "hiddentextfunction4(); toggleChevron()"></i>
+											 </p>
+										 	<div id = hiddentext4>
+									 		<p>
+											I lead a team of volunteers, coordinated judges and sponsors, helped and mentored groups over the weekend, organised all ticketing and attendee lists and ensured the event ran smoothly throughout. This hugely improved my leadership skills and I learnt a lot through working alongside and collaborating with the different departments at   Imperial College to enable such a successful event.sation and running of the events. </p><hr>
+										</div>
+
+	 									 </div>
+									</div>
+								
+								
+							<p></br></p>
 
 									<div class="row">
 										 <div class="column2 left" >
 										    <a href="https://www.imperial.ac.uk/be-inspired/student-recruitment-and-outreach/schools-and-colleges/students/on-campus-activities/programmes/pathways-to-medicine/" target = '_blank'><img src="images/imperial.png" width="180" style= "margin-right:15px; margin:25px"></a>
 										 </div>
 										 <div class="column2 right">
-										    <h3> eMentor: Pathways to Medicine
-											</h3>
+										    <h3> eMentor </h3>
+										    	<h6>Pathways to Medicine
+											</h6>
 										    <p> As an eMentor for the programme (aimed at supporting state-school students from low income backgrounds) I mentor several students, guiding them through the application process for medicine and providing support and on-demand advice. </p>
 
 	 									 </div>
 									</div>
 
-								<hr>
-							</br>
+								
+							<p></br></p>
 
 									<div class="row">
 										 <div class="column2 left" >
-										    <a href="http://www.icsmvision.co.uk" target = '_blank'><img src="images/vision.png" width="180" style= "margin-right:15px; margin:25px"></a>
+										    <a href="http://www.icsmvision.co.uk" target = '_blank'><img src="images/vision.png" width="160" style= "margin-right:15px; margin:25px"></a>
 										 </div>
 										 <div class="column2 right">
-										    <h3> Sponsorship Officer and Publicity Officer at ICSM Vision Outreach
+										    <h3> Sponsorship Officer and Publicity Officer 
 	</h3>
-										    <p>  <i>ICSM VISION OUTREACH: WIDENING ACCESS TO MEDICINE
-											 </i> </br> ICSM Vision is medical student-led society which holds events aimed at prospective medical students from non-selective state schools in order to widen participation. As part of my roles, I assisted in organising four large conferences each catering to >100 students, I ran workshops and mock interviews, secured over £1000 in sponsorship and created and managed all promotional material and media.
- </p>
+										     <h6>ICSM Vision Outreach
+											 </h6> <p> ICSM Vision is medical student-led society which holds events aimed at prospective medical students from non-selective state schools in order to widen participation. </br>
+
+											 <i class = "button textarrow fa fa-chevron-right" onclick = "hiddentextfunction5(), toggleChevron()" > </i>
+											</p>
+
+											 <div id = "hiddentext5" >
+											 	<p>
+											 	As part of my roles, I assisted in organising four large conferences each catering to >100 students, I ran workshops and mock interviews, secured over £1000 in sponsorship and created and managed all promotional material and media. </p><hr>
+											 </div>
+ 
 
 	 									 </div>
 									</div>
 
 
-								<hr>
+								
 							</br>
 
 									<div class="row">
 										 <div class="column2 left" >
-										    <a href="https://www.gianthealthevent.com/" target = '_blank'><img src="images/giant.jpg" width="160" style= "margin-right:15px; margin:25px"></a>
+										    <a href="https://www.gianthealthevent.com/" target = '_blank'><img src="images/giant.jpg" width="120" style= "margin:10px 25px 0px 45px"></a>
 										 </div>
 										 <div class="column2 right">
 										    <h3> Conference Maker: GIANT Health Events
 											</h3>
-										    <p> The GIANT (Global Innovation and New Technology) Health Event is a 3 day London  conference showcasing leading tech and innovation in the healthcare field. As part of my role, I was responsible for coordinating speakers and their talks, registering           attendees and exhibitors, and assisting with organisation and set up throughout. </p>
+											<h6>The GIANT (Global Innovation and New Technology) Health Event</h6>
+										    <p> The GIANT Health Event is a 3 day London  conference showcasing leading tech and innovation in the healthcare field. As part of my role, I was responsible for coordinating speakers and their talks, registering           attendees and exhibitors, and assisting with organisation and set up throughout. </p>
 
 	 									 </div>
 									</div>
 
-								</br></br> 
+								<p></br></br></p>
 
-								<h3> I have also held committee roles on: </h3> </br>
+								<h3> Other Committee Roles: </h3> </br>
+								<p>
+									<ul>
+										
+										<li>MedTech Imperial: Publicity and Social Media Officer 2016/17  </li>
+										<li>Final Year Dinner: Branding and Marketing 2017/18   </li>   
+										<li>Imperial Medics Cricket:   Website Manager 2017/18 </li>
+										<li>Imperial College Symphony Orchestra: Librarian 2015/16 </li>
 
+										</br>
+									<li> 
+								Also represented Imperial College School of Medicine competing in Netball, Squash and Cricket </br>
+									Performed in the Imperial  College Symphony Orchestra and Imperial College School of Medicine Orchestra 
+									(Bassoon Grade 8, Violin Grade 7)
+								</li>
+							</ul>
 
-							<div class="row">
+								</p>
+							<!-- <div class="row">
 									<div class="col-4 col-6-medium col-12-small">
 											<a href="https://www.union.ic.ac.uk/medic/medtechimperial/" target="_blank" class="image fit"><img src="images/medtech.png" alt=""  ></a>
 
@@ -180,7 +284,7 @@
 											<a href="http://www.stfyd.co.uk/" target="_blank" class="image fit"><img src="images/stfyd.jpg" alt=""  ></a>
 										</div>
 
-</div>
+</div> -->
 								</br></br></br>
 
 
@@ -247,7 +351,7 @@
 
 									<p> <i><b>NATIONAL HEART AND LUNG INSTITUTE  |  TAN, L; MIELEWCZIK, M; DHUTIA, N; FRANCIS, D </b></i>
 
-									</p> <p> I created a fully-automated,, vendor independent library to identify cardinal landmarks (mitral and tricuspid valve annuli) on moving echocardiographic images using a spatio-temporal-variance approach with analysis of greyscale histograms.  I then validated both robustness and accuracy of several different imaging processing approaches in identifying these points. 
+									</p> <p> I created a fully-automated, vendor independent library to identify cardinal landmarks (mitral and tricuspid valve annuli) on moving echocardiographic images using a spatio-temporal-variance approach with analysis of greyscale histograms.  I then validated both robustness and accuracy of several different imaging processing approaches in identifying these points. 
 									</p><p>Automation of the imaging analysis process for echocardiography has the potential to  improve efficiency and accessibility. My program is able to identify initial landmarks in an operator-independent manner to then allow further workflows to run and enable automatic quantification of cardiac structure and function.  
 									</p><p>
 									Exhibited as a poster presentation at the IC Biomedical Symposium 2017 (Hammersmith        Hospital) and the Cardiovascular Undergraduate Conference 2018 (Imperial College London).
@@ -256,7 +360,7 @@
 
 
 							</br>	<hr>
-							</br>
+							</br></br>
 
 								<h3> A robust and fast algorithm for fully automated detection of the ultrasound cone in echocardiographic image sequences </h3>
 
@@ -269,7 +373,7 @@
 
 
 							</br>	<hr>
-							</br>
+							</br></br>
 
 
 
@@ -289,7 +393,7 @@
 								<header>
 									<h2>Design Portfolio</h2>
 								
-									<p>CLICK IMAGES TO ENLARGE</p>
+									<h6></br>CLICK IMAGES TO ENLARGE</h6>
 								</header>
 
 
@@ -307,72 +411,56 @@
 											<img src="images/design/icsmcod3b.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
 										</div>
 
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/vision1b.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
-										</div>
-										
+																			
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/vision2b.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
+											<img src="images/design/vision2b.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
 										</div>
 
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod1b.png" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow">
+											<img src="images/design/icsmcod1b.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
 										</div>
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/leadin2b.png" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow">
+											<img src="images/design/leadin2b.png" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow">
 										</div>
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/stfyd2b.png" alt="" onclick="openModal();currentSlide(8)" class="hover-shadow">
+											<img src="images/design/leadin4b.png" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow">
 										</div>
 
 										
+										
+										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/stfyd6b.png" alt="" onclick="openModal();currentSlide(9)" class="hover-shadow">
+											<img src="images/design/leadin3b.png" alt="" onclick="openModal();currentSlide(8)" class="hover-shadow">
 										</div>
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/leadin3b.png" alt="" onclick="openModal();currentSlide(10)" class="hover-shadow">
+											<img src="images/design/stfyd2b.png" alt="" onclick="openModal();currentSlide(9)" class="hover-shadow">
 										</div>
+
 										
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/leadin4b.png" alt="" onclick="openModal();currentSlide(11)" class="hover-shadow">
-										</div>
-
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/leadin5b.png" alt="" onclick="openModal();currentSlide(12)" class="hover-shadow">
-										</div>
 
 
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod4b.png" alt="" onclick="openModal();currentSlide(13)" class="hover-shadow">
+											<img src="images/design/icsmcod4b.png" alt="" onclick="openModal();currentSlide(10)" class="hover-shadow">
 										</div>
 										
 										
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod2b.png" alt="" onclick="openModal();currentSlide(14)" class="hover-shadow">
+											<img src="images/design/icsmcod2b.png" alt="" onclick="openModal();currentSlide(11)" class="hover-shadow">
 										</div>
 
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod6b.png" alt="" onclick="openModal();currentSlide(15)" class="hover-shadow">
+											<img src="images/design/icsmcod6b.png" alt="" onclick="openModal();currentSlide(12)" class="hover-shadow">
 										</div>
 
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/stfyd6b.png" alt="" onclick="openModal();currentSlide(16)" class="hover-shadow">
-										</div>
-
+														
 										
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod7b.png" alt="" onclick="openModal();currentSlide(17)" class="hover-shadow">
-										</div>
 										
-										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/design/icsmcod8b.png" alt="" onclick="openModal();currentSlide(18)" class="hover-shadow">
-										</div>
-
+										
 
 
 								</div>
@@ -386,85 +474,68 @@
 							  <div class="modal-content">
 
 							    <div class="mySlides">
-							      <div class="numbertext">1 / 18</div>
+							      <div class="numbertext">1 / 12</div>
 							      <img src="images/design/leadin1.png" style="width:100%">
 							    </div>
 
-							   
+							   							   							    						    
 							    <div class="mySlides">
-							      <div class="numbertext">2 / 18 </div>
+							      <div class="numbertext">2 / 12</div>
 							      <img src="images/design/stfyd1.jpg" style="width:100%">
 							    </div>
 
 							    <div class="mySlides">
-							      <div class="numbertext">3 / 18 </div>
+							      <div class="numbertext">3 / 12 </div>
 							      <img src="images/design/icsmcod3.png" style="width:100%">
 							    </div>
 
 							    <div class="mySlides">
-							      <div class="numbertext">4 / 18 </div>
-							      <img src="images/design/vision1.jpg" style="width:100%">
-							    </div>
-							    
-							   
-							    <div class="mySlides">
-							      <div class="numbertext">5 / 18 </div>
+							      <div class="numbertext">4 / 12</div>
 							      <img src="images/design/vision2.png" style="width:100%">
 							    </div>
 
-							    
 							    <div class="mySlides">
-							      <div class="numbertext">6 / 18</div>
+							      <div class="numbertext">5 / 12</div>
 							      <img src="images/design/icsmcod1.png" style="width:100%">
 							    </div>
 
+							   
 							    <div class="mySlides">
-							      <div class="numbertext">7 / 18</div>
+							      <div class="numbertext">6 / 12</div>
 							      <img src="images/design/leadin2.png" style="width:100%">
 							    </div>
 
 							    <div class="mySlides">
-							      <div class="numbertext">8 / 18</div>
-							      <img src="images/design/stfyd2.png" style="width:100%">
-							    </div>
-
-							   
-							    <div class="mySlides">
-							      <div class="numbertext">9 / 18</div>
-							      <img src="images/design/stfyd6.png" style="width:100%">
-							    </div>
-
-							    <div class="mySlides">
-							      <div class="numbertext">10 / 18</div>
-							      <img src="images/design/leadin3.png" style="width:100%">
-							    </div>
-
-							    <div class="mySlides">
-							      <div class="numbertext">11 / 18</div>
+							      <div class="numbertext">7 / 12</div>
 							      <img src="images/design/leadin4.png" style="width:100%">
 							    </div>
 
 							    <div class="mySlides">
-							      <div class="numbertext">12 / 18</div>
-							      <img src="images/design/leadin5.png" style="width:100%">
+							      <div class="numbertext">8 / 12</div>
+							      <img src="images/design/leadin3.png" style="width:100%">
 							    </div>
 
 							    <div class="mySlides">
-							      <div class="numbertext">13 / 18</div>
+							      <div class="numbertext">9 / 12</div>
+							      <img src="images/design/stfyd2.png" style="width:100%">
+							    </div>
+
+							    <div class="mySlides">
+							      <div class="numbertext">10 / 12</div>
 							      <img src="images/design/icsmcod4.png" style="width:100%">
 							    </div>
 
 								<div class="mySlides">
-							      <div class="numbertext">14 / 18</div>
+							      <div class="numbertext">11 / 12</div>
 							      <img src="images/design/icsmcod2.png" style="width:100%">
 							    </div>
 							    
 
 							    <div class="mySlides">
-							      <div class="numbertext">15 / 18</div>
+							      <div class="numbertext">12 / 12</div>
 							      <img src="images/design/icsmcod6.png" style="width:100%">
 							    </div>
-
+<!-- 
 							    <div class="mySlides">
 							      <div class="numbertext">16 / 18</div>
 							      <img src="images/design/stfyd6.png" style="width:100%">
@@ -480,7 +551,7 @@
 							      <div class="numbertext">18 / 18</div>
 							      <img src="images/design/icsmcod8.png" style="width:100%">
 							    </div>
-
+ -->
 
 							    <!-- Next/previous controls -->
 							    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -523,12 +594,25 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>Contact</h2>
 								</header>
-								<p> Always on the look out for new opportunities, internships and projects!
+								<p> Fancy a coffee? Find me at:
 
 								</p>
-								<p> Please email me on <a href="mailto: ljt13@ic.ac.uk"> ljt13@ic.ac.uk </a></p>
+								
+
+								<p></p>
+
+
+								<a href="https://www.linkedin.com/in/laura-tan-4b9b33139/" target="_blank" class="icon fa-linkedin-square contactlink"> Linked In</a>
+
+								<p></p>
+
+								<a href="mailto: laurajptan@gmail.com" target="_blank" class="icon fa-envelope-square contactlink"> laurajptan@gmail.com</a>
+
+
+
+							<p></br></p>
 							</article>
 
 					</div>
@@ -548,6 +632,94 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+			<!-- <script>
+			function hiddentextfunction() {
+			  var x = document.getElementById("hiddentext");
+			  // if (x.style.display === "none") {
+			    x.style.display = "block";
+			  // } else {
+			  //   x.style.display = "none";
+			  // }
+
+			}
+			</script> -->
+
+			<script>
+			function hiddentextfunction1() {
+			  var x = document.getElementById("hiddentext1");
+			   if (x.style.display === "none" || x.style.display == '') {
+			    x.style.display = "block";
+			   } else {
+			     x.style.display = "none";
+			   }
+
+			}
+			</script>
+
+			<script>
+			function hiddentextfunction2() {
+			  var x = document.getElementById("hiddentext2");
+			   if (x.style.display === "none" || x.style.display == '') {
+			    x.style.display = "block";
+			   } else {
+			     x.style.display = "none";
+			   }
+
+			}
+			</script>
+
+			<script>
+			function hiddentextfunction3() {
+			  var x = document.getElementById("hiddentext3");
+			   if (x.style.display === "none" || x.style.display == '') {
+			    x.style.display = "block";
+			   } else {
+			     x.style.display = "none";
+			   }
+
+			}
+			</script>
+
+			<script>
+			function hiddentextfunction4() {
+			  var x = document.getElementById("hiddentext4");
+			   if (x.style.display === "none" || x.style.display == '') {
+			    x.style.display = "block";
+			   } else {
+			     x.style.display = "none";
+			   }
+
+			}
+			</script>
+
+			<script>
+			function hiddentextfunction5() {
+			  var x = document.getElementById("hiddentext5");
+			   if (x.style.display === "none" || x.style.display == '') {
+			    x.style.display = "block";
+			   } else {
+			     x.style.display = "none";
+			   }
+
+			}
+			</script>
+
+
+
+			<!-- <script>
+				toggleChevron = function(button) {
+			  $(button).find('span').toggleClass('fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down');
+			}
+			</script> -->
+
+			<!-- <script>
+				function toggleChevron (button)
+				$(button).find(span).toggleClass('fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down');
+			</script> -->
+
+
 
 			<script>
 			// Open the Modal

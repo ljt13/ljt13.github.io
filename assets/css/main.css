@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap");
 
 /*
 	Astral by HTML5 UP
@@ -1295,6 +1296,26 @@ input, select, textarea {
 
 		}
 
+
+
+/*Loader*/
+
+	/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_3.gif) center no-repeat #fff;
+}
+
+
 /* Basic */
 
 	html {
@@ -1306,7 +1327,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/greenbg2.png");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1324,12 +1345,17 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
+	#hiddentext1, #hiddentext2, #hiddentext3, #hiddentext4, #hiddentext5 {
+		display: none;
+	}
+
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1375,6 +1401,8 @@ input, select, textarea {
 	}
 
 	h2 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
 		font-size: 1.8em;
 		letter-spacing: -0.015em;
 	}
@@ -1384,10 +1412,47 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
+	h3 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 800;
+		font-size: 1em;
+		color: #3edeb3;
+	}
+
+	h5 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 200;
+		font-size: 0.7em;
+		color: #aaa;
+		letter-spacing: 0.07em;
+		padding-bottom: 0.4em;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: #aaaaaa;
+	}
+
+	a:hover {
+		color: #777777;
+	}
+
+	h6 {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		font-size: 0.7em;
+		color: #777777;
+		letter-spacing: 0.07em;
+		padding-bottom: 0.4em;
+	}
+
+
 	p {
 		font-size: .75em;
 		letter-spacing: -0.015em;
 		margin-bottom: 1em;
+
 
 	}	
 
@@ -1402,8 +1467,16 @@ input, select, textarea {
 			font-size: 1.375em;
 		}
 
-		h3, h4, h5, h6 {
+		h3, h4, h6 {
 			font-size: 1em;
+		}
+
+		h5 {
+			font-size: 0.8em;
+		}
+
+		p {
+			font-size: 0.9em;
 		}
 
 	}
@@ -1422,7 +1495,7 @@ input, select, textarea {
 		border: 0;
 		border-top: solid 1.5px #ddd;
 		padding: 1.5em 0 0 0;
-		margin: 2em 4em 2em 4em;
+		margin: 3em 4em 0em 4em;
 	}
 
 	sub {
@@ -1540,11 +1613,14 @@ input, select, textarea {
 
 	header {
 		margin: 0 0 1.5em 0;
+
 	}
 
 		header > p {
 			margin: 0.5em 0 0 0;
 			color: #aaa;
+			font-weight: 350;
+			
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1592,8 +1668,15 @@ input, select, textarea {
 				width: auto;
 			}
 
+	/*@media screen and (max-width: 736px) {
 
+			.image img {
+				width: 20%;
+			}
 
+		}
+
+*/
 
 /* Button */
 
@@ -1694,11 +1777,49 @@ input, select, textarea {
 
 		}
 
+	button,
+	.button.textarrow {
+
+		color: #FFFFFF;
+		background-color: #3edeb3; 
+		font-size: 10px;
+		margin-top: 1em;
+		padding-left: 1em;
+		border-radius: 50px;
+		width: 6px;
+
+	}
+
+	button:hover,
+		.button.textarrow:hover {
+			background-color: #3bcca5;
+		}
+	
+
+	.icon {
+		color: #3edeb3;
+	}
+	.contactlink {
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+	}
+
+	.icon:hover {
+		color: #32b894;
+	}
+
+
+
+
 /* List */
 
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+
+		font-size: .9em;
+		letter-spacing: -0.015em;
 	}
 
 		ul li {
@@ -1763,6 +1884,8 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
+
+	
 
 /* Nav */
 
@@ -1902,6 +2025,8 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+
+
 		@media screen and (max-width: 1280px) {
 
 			#wrapper {
@@ -1934,6 +2059,8 @@ input, select, textarea {
 			#wrapper {
 				padding: 1em 0;
 				max-width: 100%;
+
+
 			}
 
 		}
@@ -1970,8 +2097,9 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
+		border-radius: 5px;
 		background: #ffffff;
-		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -1992,6 +2120,15 @@ input, select, textarea {
 			#main > .panel.inactive {
 				opacity: 0;
 			}
+
+
+			/*hide circle image when not mobile*/
+		#main > .panel.intro img.avatar {
+							
+				display: none;
+
+			}
+
 
 
 			@media screen and (max-width: 980px) {
@@ -2082,10 +2219,11 @@ input, select, textarea {
 						right: 0;
 						top: 50%;
 						margin-top: -1.375em;
+						border-radius: 3px 0px 0px 3px;
 						width: 2.75em;
 						height: 2.75em;
 						background: #000;
-						background: rgba(0, 0, 0, 0.75);
+						background: rgba(0, 0, 0, 0.40);
 						color: #ffffff;
 						text-align: center;
 						line-height: 2.75em;
@@ -2112,6 +2250,9 @@ input, select, textarea {
 						width: 3em;
 						padding-right: 0.25em;
 					}
+
+				
+
 
 				#main > .panel.intro header {
 					-moz-flex-grow: 1;
@@ -2158,22 +2299,72 @@ input, select, textarea {
 							text-align: center;
 						}
 
+					
+
 				}
 
 				@media screen and (max-width: 736px) {
 
 					#main > .panel.intro .pic {
-						height: 20em;
+						height: 10em;
 					}
 
 					#main > .panel.intro header {
-						padding: 2.75em 2em 2.5em 2em;
+						padding: 2.75em 2em 2em 2em;
 					}
 
 						#main > .panel.intro header p {
 							font-size: 1em;
 							margin: 0.25em 0 0 0;
+							font-weight: 500;
 						}
+
+					#main > .panel.intro .pic:before {
+						display: none;
+					}
+
+					#main > .panel.intro .pic img {
+							/*position: relative;*/
+							/*display: block;*/
+							/*position: absolute;
+							top: 0;
+							left: 0;*/
+							/*margin-left: auto;*/
+							/*margin-right: auto;*/
+							/*width: 160px;*/
+							/*height: 160px;*/
+							/*border-radius: 120px;*/
+							display: none;
+							/*vertical-align: middle;*/
+						/*	-moz-object-fit: cover;
+							-webkit-object-fit: cover;
+							-ms-object-fit: cover;
+							object-fit: cover;
+							-moz-object-position: center;
+							-webkit-object-position: center;
+							-ms-object-position: center;
+							object-position: center;
+*/
+						}	
+
+						/*reshow circle image when mobile*/
+					#main > .panel.intro img.avatar {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					padding: 35px 0px 25px 0px;
+					width: 50%;
+					}
+					
+					#main > .panel.intro .pic .arrow {
+						display: none;
+					
+					}
+					
+					.jumplink {
+						display: none;
+					}
+
 
 				}
 
@@ -2188,13 +2379,15 @@ input, select, textarea {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: black;
+
 }
 
 /* Modal Content */
@@ -2205,6 +2398,7 @@ input, select, textarea {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+
 }
 
 /* The Close Button */
@@ -2227,6 +2421,7 @@ input, select, textarea {
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  
 }
 
 /* Next & previous buttons */
@@ -2240,7 +2435,7 @@ input, select, textarea {
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -2263,10 +2458,12 @@ input, select, textarea {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 0 0 3px 0;
 }
 
 /* Caption text 
