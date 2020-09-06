@@ -1422,6 +1422,7 @@ if it's not present, don't show loader */
 		color: #3EDEB3;
 		letter-spacing: 0.07em;
 		padding-bottom: 0.4em;
+		padding-top: 0.6em;
 
 	}
 
@@ -2126,14 +2127,59 @@ if it's not present, don't show loader */
 
 			}
 
+		#main > .panel.intro .mobilecontent {
+			display: none;
+		}
 
+
+		/*#main > .panel.intro img.mini {
+				display: inline;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 5px 0px 5px 0px;
+				width: 30%;
+			}*/
+
+
+	.post-container {
+		    margin: 0px 0px 30px 0px;  
+		    /*border: 5px solid #333;*/
+		    overflow: auto
+		}
+			
+	.post-thumb {
+		    float: left;
+		    /*border: 5px solid #333;*/
+		    width: 50%;
+		   margin-right: -20px;
+
+		}
+
+	.post-thumb img {
+		    display: block;
+		    width: 80%;
+		    padding-left: 80px;
+		    
+
+		}
+
+	.post-content {
+		    margin-left: 210px;
+		    margin-top: -10px;
+
+		}
+
+/*	.post-title {
+		    font-weight: bold;
+		    font-size: 200%
+		}*/
 
 			@media screen and (max-width: 980px) {
 				.column2 {
       			 	 width: 100%;
     			}
 
-
+    			
 			}
 
 
@@ -2177,7 +2223,7 @@ if it's not present, don't show loader */
 					-webkit-flex-shrink: 0;
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
-					width: 17em;
+					width: 10em;
 					height: 100%;
 				}
 
@@ -2209,6 +2255,9 @@ if it's not present, don't show loader */
 						-ms-object-position: center;
 						object-position: center;
 					}
+
+
+
 
 					#main > .panel.intro .pic .arrow {
 						display: block;
@@ -2260,7 +2309,7 @@ if it's not present, don't show loader */
 					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
-					padding: 3.5em 2.5em;
+					padding: 3.5em 0em;
 					margin-bottom: 0;
 					width: 100%;
 				}
@@ -2346,6 +2395,9 @@ if it's not present, don't show loader */
 						}	
 
 						/*reshow circle image when mobile*/
+
+
+
 					#main > .panel.intro img.avatar {
 					display: block;
 					margin-left: auto;
@@ -2362,6 +2414,41 @@ if it's not present, don't show loader */
 					.jumplink {
 						display: none;
 					}
+
+					#main > .panel.intro .mobilecontent {
+						display: block;
+					}
+					/*hide circle image when not mobile*/
+		
+
+
+		/*#main > .panel.intro img.mini {
+				display: inline;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 5px 0px 5px 0px;
+				width: 30%;
+			}*/
+
+
+	.post-container {
+		    display: none;
+		}
+			
+	.post-thumb {
+		    display: none;
+
+		}
+
+	.post-thumb img {
+		   display: none;
+		    
+
+		}
+
+	.post-content {
+		   display: none;
+		}
 
 
 				}
