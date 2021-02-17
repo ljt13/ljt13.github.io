@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
 
 
 
@@ -1342,7 +1344,7 @@ if it's not present, don't show loader */
 		}
 
 
-	#hiddentext1, #hiddentext2, #hiddentext3, #hiddentext4, #hiddentext5 {
+	#hiddentext1, #hiddentext2, #hiddentext3, #hiddentext4, #hiddentext5, #hiddentext6 {
 		display: none;
 	}
 
@@ -1393,14 +1395,19 @@ if it's not present, don't show loader */
 
 	h1 {
 		font-size: 2.4em;
+		font-family: 'Inter', sans-serif;
 		letter-spacing: -0.015em;
+		font-weight: 600;
+		color: #21d1ba;		
+		padding-bottom: 0.2em;
 	}
 
 	h2 {
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Inter', sans-serif;
 		font-weight: 400;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		letter-spacing: -0.015em;
+		padding-bottom: 0.2em;
 	}
 
 	h3, h4, h5, h6 {
@@ -1409,22 +1416,32 @@ if it's not present, don't show loader */
 	}
 
 	h3 {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 800;
-		font-size: 1em;
-		color: #3edeb3;
+		font-family: 'Inter', sans-serif;
+		font-weight: 600;
+		font-size: 0.75em;
+		color: #444a51;
+		padding: 0 1em 2em 1em;
+		text-align: center;
+	}
+
+
+	h4 {
+		font-size: 0.95em;
+		font-weight: 600;
+		letter-spacing: 0.03em;
 	}
 
 	h5 {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 200;
-		font-size: 0.7em;
+		font-size: 0.95em;
 		color: #3EDEB3;
-		letter-spacing: 0.07em;
+		letter-spacing: 0.55em;
 		padding-bottom: 0.4em;
-		padding-top: 0.6em;
+		padding-top: 0.8em;
 
 	}
+
 
 	a {
 		text-decoration: none;
@@ -1437,9 +1454,9 @@ if it's not present, don't show loader */
 	}
 
 	h6 {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 300;
-		font-size: 0.7em;
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		font-size: 0.6em;
 		color: #777777;
 		letter-spacing: 0.07em;
 		padding-bottom: 0.4em;
@@ -1447,9 +1464,12 @@ if it's not present, don't show loader */
 
 
 	p {
-		font-size: .75em;
+		font-size: 0.7em;
 		letter-spacing: -0.015em;
 		margin-bottom: 1em;
+		font-family: 'Inter', sans-serif;
+		color: #444a51;
+		font-weight: 400;
 
 
 	}	
@@ -1458,19 +1478,23 @@ if it's not present, don't show loader */
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.75em;
+			font-size: 2em;
 		}
 
 		h2 {
 			font-size: 1.375em;
 		}
 
-		h3, h4, h6 {
+		h3, h4 {
 			font-size: 1em;
 		}
 
 		h5 {
 			font-size: 0.8em;
+		}
+
+		h6 {
+			font-size: 0.7em;
 		}
 
 		p {
@@ -1610,7 +1634,7 @@ if it's not present, don't show loader */
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1em 0em;
 
 	}
 
@@ -1624,7 +1648,7 @@ if it's not present, don't show loader */
 		@media screen and (max-width: 736px) {
 
 			header {
-				margin: 0 0 1em 0;
+				margin: 0 0 0 0;
 			}
 
 		}
@@ -1642,7 +1666,9 @@ if it's not present, don't show loader */
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 70%;
+			 margin-left: auto;
+  			margin-right: auto;
 		}
 
 		.image.featured {
@@ -1774,7 +1800,7 @@ if it's not present, don't show loader */
 			}
 
 		}
-
+/*
 	button,
 	.button.textarrow {
 
@@ -1807,7 +1833,7 @@ if it's not present, don't show loader */
 		color: #32b894;
 	}
 
-
+*/
 
 
 /* List */
@@ -1992,7 +2018,7 @@ if it's not present, don't show loader */
 /* Wrapper */
 
 	#wrapper {
-		width: 45em;
+		width: 40em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
@@ -2028,7 +2054,7 @@ if it's not present, don't show loader */
 		@media screen and (max-width: 1280px) {
 
 			#wrapper {
-				padding: 3em 0;
+				padding: 13em 0;
 				max-width: calc(100% - 6em);
 			}
 
@@ -2038,7 +2064,7 @@ if it's not present, don't show loader */
 
 			#wrapper {
 				padding: 1.5em 0;
-				max-width: calc(100% - 8em);
+				max-width: calc(100% - 10em);
 			}
 
 		}
@@ -2069,7 +2095,7 @@ if it's not present, don't show loader */
 
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
     content: "";
     display: table;
     clear: both;
@@ -2088,7 +2114,7 @@ if it's not present, don't show loader */
 
 .right {
   width: 70%;
-}
+}*/
 
 
 	#main {
@@ -2121,7 +2147,7 @@ if it's not present, don't show loader */
 
 
 			/*hide circle image when not mobile*/
-		#main > .panel.intro img.avatar {
+/*		#main > .panel.intro img.avatar {
 							
 				display: none;
 
@@ -2130,7 +2156,7 @@ if it's not present, don't show loader */
 		#main > .panel.intro .mobilecontent {
 			display: none;
 		}
-
+*/
 
 		/*#main > .panel.intro img.mini {
 				display: inline;
@@ -2140,16 +2166,14 @@ if it's not present, don't show loader */
 				width: 30%;
 			}*/
 
-
+/*
 	.post-container {
-		    margin: 0px 0px 30px 0px;  
-		    /*border: 5px solid #333;*/
+		    margin: 0px 0px 0px 0px;  
 		    overflow: auto
 		}
 			
 	.post-thumb {
 		    float: left;
-		    /*border: 5px solid #333;*/
 		    width: 50%;
 		   margin-right: -20px;
 
@@ -2164,23 +2188,23 @@ if it's not present, don't show loader */
 		}
 
 	.post-content {
-		    margin-left: 210px;
+		    margin-left: 100px;
 		    margin-top: -10px;
 
-		}
+		}*/
 
 /*	.post-title {
 		    font-weight: bold;
 		    font-size: 200%
 		}*/
 
-			@media screen and (max-width: 980px) {
+		/*	@media screen and (max-width: 980px) {
 				.column2 {
       			 	 width: 100%;
     			}
 
     			
-			}
+			}*/
 
 
 			@media screen and (max-width: 736px) {
@@ -2189,9 +2213,9 @@ if it's not present, don't show loader */
 					padding: 2em 1.5em 1.5em 1.5em;
 				}
 
-				.column2 {
+				/*.column2 {
       			 	 width: 100%;
-    			}
+    			}*/
 
 			}
 
@@ -2309,19 +2333,19 @@ if it's not present, don't show loader */
 					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
-					padding: 3.5em 0em;
+					padding: 3em 5em;
 					margin-bottom: 0;
 					width: 100%;
 				}
 
 					#main > .panel.intro header h1 {
-						line-height: 1.25em;
+						line-height: 1.15em;
 						margin-bottom: 0;
 					}
 
 					#main > .panel.intro header p {
 						letter-spacing: -0.015em;
-						font-size: 1.25em;
+						font-size: 1em;
 						margin: 0.25em 0 0 0;
 					}
 
@@ -2357,7 +2381,7 @@ if it's not present, don't show loader */
 					}
 
 					#main > .panel.intro header {
-						padding: 2.75em 2em 2em 2em;
+						padding: 1.5em 2em 2.5em 2em;
 					}
 
 						#main > .panel.intro header p {
@@ -2366,11 +2390,21 @@ if it's not present, don't show loader */
 							font-weight: 500;
 						}
 
-					#main > .panel.intro .pic:before {
+						#main > .panel.intro header h5 {
+							font-size: 1.2em;
+
+						}
+
+					.jumplink {
 						display: none;
 					}
 
-					#main > .panel.intro .pic img {
+
+/*					#main > .panel.intro .pic:before {
+						display: none;
+					}
+
+					#main > .panel.intro .pic img {*/
 							/*position: relative;*/
 							/*display: block;*/
 							/*position: absolute;
@@ -2381,7 +2415,7 @@ if it's not present, don't show loader */
 							/*width: 160px;*/
 							/*height: 160px;*/
 							/*border-radius: 120px;*/
-							display: none;
+							/*display: none;*/
 							/*vertical-align: middle;*/
 						/*	-moz-object-fit: cover;
 							-webkit-object-fit: cover;
@@ -2398,7 +2432,7 @@ if it's not present, don't show loader */
 
 
 
-					#main > .panel.intro img.avatar {
+			/*		#main > .panel.intro img.avatar {
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
@@ -2417,7 +2451,7 @@ if it's not present, don't show loader */
 
 					#main > .panel.intro .mobilecontent {
 						display: block;
-					}
+					}*/
 					/*hide circle image when not mobile*/
 		
 
@@ -2430,7 +2464,7 @@ if it's not present, don't show loader */
 				width: 30%;
 			}*/
 
-
+/*
 	.post-container {
 		    display: none;
 		}
@@ -2448,7 +2482,7 @@ if it's not present, don't show loader */
 
 	.post-content {
 		   display: none;
-		}
+		}*/
 
 
 				}
